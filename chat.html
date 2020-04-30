@@ -1,0 +1,196 @@
+<html>
+<head>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="fontawesome.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+  <title>
+    
+  </title>
+  <style type="text/css" media="all">
+  /*.           */
+    body{
+      margin: 0;
+      padding: 0;
+      background: #35424a;
+    }
+    .ctitle{
+      
+      top: 0;
+      width: 100%;
+      background: #376b8c;
+      height: 10%;
+      vertical-align: center;
+    }
+    
+    
+    .ctitle img{
+      
+      float: left;
+      vertical-align: middle;
+      margin:3px 0 0 15px ;
+      max-height: 90%;
+      border-radius: 50%;
+      display: inline;
+      
+    }
+    .avatar-info{
+      float: left;
+      margin: 0 0 0 20px;
+    }
+    .avatar-info a{
+      Display: inline-block;
+      Background: #007bff;
+      Padding: 2px 8px;
+      Line-height: 1.5;
+      Font-size: 12px;
+      Border-radius: 4px;
+      Text-transform: uppercase;
+      Color: #fff! important;
+      margin: 3px 0 0 0;
+    }
+    .cchat{
+      position: fixed;
+      display: flex;
+      text-align: center;
+      vertical-align: bottom;
+      height: 8%;
+      width: 100%;
+      background: #376b8c;
+      top: 100%;
+      transform: translateY(-100%);
+      position: absolute;
+      border-radius: 24px 0 0 24px;
+    }
+    .cchat input{
+      height: 95%;
+      border: 2px solid #3498db;
+      border-radius: 24px;
+      border: 0;
+      background: none;
+      display: block;
+      text-align: center;
+      border: 2px solid #3498db;
+      padding: 10px 10px;
+      width: 90%;
+      outline: none;
+      color: white !important;
+      border-radius: 24px;
+      letter-spacing: 0.8px;
+      transition: 0.25s;
+    }
+    .cchat input:placeholder{
+      color: #ffffff !important;
+    }
+    .cchat input:focus{
+      border-color: #2ecc71;
+      width: 95%;
+      height: 95%;
+      font-size: 16p;
+    }
+    .cchat span{
+      color: #3498db;
+      float: right;
+      vertical-align: middle;
+      display: inline-block;
+      display: inline-block !important;
+      vertical-align: middle !important;
+      line-height: normal !important;
+      margin: auto;
+    }
+    .cchat button{
+      max-height: 100%;
+      background-color: rgba(0, 0 ,0 ,0);
+      color: #3498db;
+      border: none;
+    }
+    .cchat button:hover{
+      color: #fff;
+      border: none;
+    }
+    .csender{
+      height: 50px;
+      width: auto;
+      margin: 5px;
+      float: left;
+    }
+    .creceiver{
+      height: 50px;
+      width: auto;
+      float: right;
+      margin: 5px;
+      
+    }
+    .csender img{
+      height: 50px;
+      width: 50px;
+      border-radius: 25px;
+      
+    }
+    .csender i{
+      display: inline-block;
+	  	background: #ff0017;
+      padding: 2px 8px;
+      line-height: 1.5;
+      font-size: 12px;
+      border-radius: 4px;
+      color: #fff! important;
+      margin-right: 15px;
+    }
+    .creceiver img{
+      height: 50px;
+      width: 50px;
+      border-radius: 25px;
+      float: right;
+    }
+    .creceiver i{
+      display: inline-block;
+	  	background: #007bff;
+      padding: 2px 8px;
+      line-height: 1.5;
+      font-size: 12px;
+      border-radius: 4px;
+      color: #fff! important;
+      margin: 3px;
+    }
+  </style>
+  
+</head>
+<body>
+  <div class="ctitle">
+    <img src="img_avatar.png" alt="#" />
+    <div class="avatar-info">
+      <a href="#sender name">sender name</a>
+      <br />
+      <span class="details"> user details: time ..</span>
+    </div>
+  </div>
+  <form>
+  <div class="cbody">
+    <div class="csender">
+      <img src="img_avatar.png" alt="avatar" />
+      <i class="pip1">Hello world !!</i>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div class="creceiver">
+      <img src="img_avatar.png" alt="" />
+      <i class="pip2"<?php $_get([msg])
+		print_r($_get)
+	  ?>></i>
+    </div>
+  </div>
+  <div class="cchat">
+    <input placeholder="type your message .." name="msg" id="msg">
+   <span><button type="submit" class="fa fa-paper-plane" ></button></span>
+    
+  </div>
+  </form>
+  </div>
+   
+</body>
+</html>
