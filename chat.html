@@ -82,7 +82,7 @@
       letter-spacing: 0.8px;
       transition: 0.25s;
     }
-    .cchat input:placeholder{
+    .cchat input::placeholder{
       color: #ffffff !important;
     }
     .cchat input:focus{
@@ -106,9 +106,10 @@
       background-color: rgba(0, 0 ,0 ,0);
       color: #3498db;
       border: none;
+      outline: none;
     }
     .cchat button:hover{
-      color: #fff;
+      color: #2ecc71;
       border: none;
     }
     .csender{
@@ -179,9 +180,7 @@
     <br />
     <div class="creceiver">
       <img src="img_avatar.png" alt="" />
-      <i class="pip2"<?php $_get([msg])
-		print_r($_get)
-	  ?>></i>
+      <i class="pip2">Hi</i>
     </div>
   </div>
   <div class="cchat">
@@ -190,7 +189,6 @@
     
   </div>
   </form>
-  </div>
    
 </body>
 </html>
