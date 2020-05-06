@@ -127,13 +127,13 @@
       border: none;
     }
     .csender{
-      height: 50px;
+      
       width: 100%;
       
       float: left;
     }
     .creceiver{
-      height: 50px;
+      
       width: auto;
       float: right;
       
@@ -504,17 +504,13 @@ function sending( )
         var spans = document.getElementById ( "spans" );
         var cmsg = input2.value;
         var nsdiv = document.createElement ( "div" );
-        var brr = document.createElement ( "br" );
-        var brr1 = document.createElement ( "br" );
-        var brr2 = document.createElement ( "br" );
+        
         nsdiv.classList.add ( 'csender' );
         var nsi = document.createElement ( "i" );
         var text = document.createTextNode ( cmsg );
         nsi.appendChild ( text );
         nsdiv.appendChild ( nsi );
-        nsdiv.appendChild ( brr );
-        nsdiv.appendChild ( brr1 );
-        nsdiv.appendChild ( brr2 );
+        
         input2.value = "";
         csender.appendChild ( nsdiv );
         spans.innerHTML = "sent !";
