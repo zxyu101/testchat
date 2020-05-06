@@ -488,6 +488,7 @@ $ ( function ( )
 		   $ ( 'form' ).on ( 'submit', function ( e )
 								{
 									e.preventDefault ( );
+									alert("you will sent :"+ input2.value);
 									$.ajax ( {
 													type: 'post',
 													url: 'post.php',
