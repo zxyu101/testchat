@@ -1,24 +1,33 @@
 <html>
-<head>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <head>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="fontawesome.css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-  <title>
-    
-  </title>
-  <style type="text/css" media="all">
-  /*.           */
+	<link href="css/css/fontawesome.min.css" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+			
+	<script src="jquery.js"></script>
+	<script src="script.js"></script>
+	
+	<title>
+	  
+	</title>
+	<link href="style.css" type="stylesheet">
+
+<style type="text/css" media="all">
+  
     body{
       margin: 0;
       padding: 0;
-      background: #35424a;
+      background:#dcdcdc;
+      
+      
+      
     }
     .ctitle{
-      
+      position: fixed;
       top: 0;
       width: 100%;
       background: #376b8c;
@@ -51,45 +60,48 @@
       Text-transform: uppercase;
       Color: #fff! important;
       margin: 3px 0 0 0;
+      text-decoration:none;
     }
     .cchat{
-      position: fixed;
+      
       display: flex;
       text-align: center;
-      vertical-align: bottom;
+      vertical-align: bottom; 
       height: 8%;
       width: 100%;
-      background: #376b8c;
-      top: 100%;
       transform: translateY(-100%);
       position: absolute;
-      border-radius: 24px 0 0 24px;
+      position: fixed;
+        top: 100%;
+  
+      border-radius: 20px 0 0 24px;
     }
     .cchat input{
       height: 95%;
       border: 2px solid #3498db;
-      border-radius: 24px;
+      border-radius: 70px;
+      margin-buttom:30px;
       border: 0;
-      background: none;
+      background: #376b8c;
       display: block;
       text-align: center;
       border: 2px solid #3498db;
       padding: 10px 10px;
-      width: 90%;
+      width:90%;
       outline: none;
       color: white !important;
-      border-radius: 24px;
+      border-radius: 70px;
       letter-spacing: 0.8px;
       transition: 0.25s;
     }
-    .cchat input:placeholder{
+    .cchat input::placeholder{
       color: #ffffff !important;
     }
     .cchat input:focus{
       border-color: #2ecc71;
       width: 95%;
-      height: 95%;
-      font-size: 16p;
+      height: 90%;
+      font-size: 15px;
     }
     .cchat span{
       color: #3498db;
@@ -100,97 +112,417 @@
       vertical-align: middle !important;
       line-height: normal !important;
       margin: auto;
+      
     }
     .cchat button{
       max-height: 100%;
       background-color: rgba(0, 0 ,0 ,0);
       color: #3498db;
       border: none;
+      outline: none;
     }
     .cchat button:hover{
-      color: #fff;
+      color: #2ecc71;
       border: none;
     }
     .csender{
       height: 50px;
       width: auto;
-      margin: 5px;
+      
       float: left;
     }
     .creceiver{
       height: 50px;
       width: auto;
       float: right;
-      margin: 5px;
+      
       
     }
     .csender img{
       height: 50px;
       width: 50px;
-      border-radius: 25px;
-      
+      border-radius: 50%;
+   
     }
     .csender i{
       display: inline-block;
-	  	background: #ff0017;
-      padding: 2px 8px;
-      line-height: 1.5;
+	  	background:#98fd98;
+      padding: 2px 8px;     
       font-size: 12px;
       border-radius: 4px;
-      color: #fff! important;
-      margin-right: 15px;
+      color: #000! important;
+      
+      
     }
-    .creceiver img{
-      height: 50px;
-      width: 50px;
-      border-radius: 25px;
+    
+    .creceiver i{
+      
+	 background:#fff;
+      padding: 2px 8px;
+      
+      font-size: 12px;
+      border-radius: 4px;
+      color: #000! important;
+      
+    }
+    .csender table{
+       
+      color:red;
+      border: none;
+    }
+    .csender table tr,td{
+      border: none;
+    }
+    .csender table tr td span{
+      font-size: 9px;
       float: right;
     }
-    .creceiver i{
-      display: inline-block;
-	  	background: #007bff;
-      padding: 2px 8px;
-      line-height: 1.5;
-      font-size: 12px;
-      border-radius: 4px;
-      color: #fff! important;
-      margin: 3px;
+	  .creceiver table{
+      
+      color: red;
+      border: none;
     }
-  </style>
-  
-</head>
-<body>
-  <div class="ctitle">
-    <img src="img_avatar.png" alt="#" />
-    <div class="avatar-info">
-      <a href="#sender name">sender name</a>
-      <br />
-      <span class="details"> user details: time ..</span>
-    </div>
-  </div>
-  <form>
-  <div class="cbody">
-    <div class="csender">
-      <img src="img_avatar.png" alt="avatar" />
-      <i class="pip1">Hello world !!</i>
-    </div>
-    <br />
-    <br />
-    <br />
-    <div class="creceiver">
-      <img src="img_avatar.png" alt="" />
-      <i class="pip2"<?php $_get([msg])
-		print_r($_get)
-	  ?>></i>
-    </div>
-  </div>
-  <div class="cchat">
-    <input placeholder="type your message .." name="msg" id="msg">
-   <span><button type="submit" class="fa fa-paper-plane" ></button></span>
+    .creceiver table tr,td{
+      border: none;
+    }
+    .creceiver table tr td span{
+      font-size: 9px;
+      float: left;
+    }
+	  .navbar {
+      height: 100%;
+      background: black;
+      width: 37px;
+      position: fixed;
+      z-index:1;
+      top: 0; 
+      left: 0;
+      
+      background-color: #111;
+      overflow:hidden; 
+      text-align: center;
+      transition: 0.0s; 
+      
+    }
+    .navbar a{
+      width: 100%;
+      margin-bottom: 70px;
+      font-size: 25px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.03s;
+      
+    }
+    .navbar a:hover{
+      color: #f1f1f1;
+    }
+    .offanime{
+      animation: offanimeanime 3s;
+    }
+    .onanime{
+      animation: onanimeanime 3s;
+    }
+    @keyframes offanimeanime{
+      from{
+        height: 100%;
+      }
+      to{
+        height: 60px;
+      }
+    @keyframes onanimeanime{
+      from{
+        height: 60px;
+      }
+      to{
+        height: 100%;
+      }
+    }
+	
+	.csearch {
+      text-align: center;
+      background: #376b8c;
+      vertical-align: middle !important;
+      height: 8%;
+      width: 100%;
+      display: flex;
+      top: 100%;
+      transform: translateY(-100%);
+      position: absolute;
+      position: fixed;
+    }
+    .csearch input{
+      max-height: 100%;
+      border: none;
+      background: none;
+      text-align: center;
+      float: left;
+      color: #fff;
+      outline: none;
+      border-radius: 25px 0 0 25px;
+      height: 100%;
+      width: 88%;
+    }
+    .csearch input::placeholder{
+      color: #fff;
+      letter-spacing: .8px;
+    }
+    .csearch input:focus{
+      border: 2px solid #2ecc71;
+      
+      
+      border-radius: 75px 0 0 75px;
+    }
+    .csearch span{
+      color: #3498db;
+      
+      vertical-align: middle;
+      display: inline-block;
+      display: inline-block !important;
+      vertical-align: middle !important;
+      line-height: normal !important;
+      margin: auto;
+    }
+    .csearch button{
+      background: none;
+      max-height: 100%;
+      outline: none;
+      background-color: rgba(0, 0 ,0 ,0);
+      color: #3498db;
+      border: none;
+    }
+    .csearch button:hover{
+      color: #00ff00;
+    }
+    .btn{
+      border: 2px solid #2ecc71;
+      border-radius: 0 75px 75px 0;
+      height: 100%;
+      width: 12%;
+      margin: 0;
+    }
+    .conversation {
+	    height: 10%;
+	    
+	}
     
-  </div>
-  </form>
-  </div>
-   
+    /*----------animations---------------*/
+    /**/
+    /**/
+    /**/
+    .animate{
+      animation: anim 1s;
+    }
+    @keyframes anim{
+      from{
+        top:100%;
+        height: 60px;
+      }
+      to{
+        top: 8%;
+        height: 60px;
+      }
+    }
+</style>
+
+  </head>
+  <body>
+ 
+	<div id = "pcmob">
+	  <div id="navbar" class="navbar">
+		<a style="margin-top: 20px;" onclick="hideshow ( );" href="#"><i  class="fa fa-bars"></i></a>
+		<a id="a1" href="#"><i  class="fa fa-search"></i></a>
+		<a id="a2" href="#"><i  class="fa fa-user"></i></a>
+		<a id="a3" href="#"><i  class="fa fa-users"></i></a>
+		<a id="a4" href="#"><i  class="fa fa-bullhorn"></i></a>
+		<a id="a5" href="#"><i  class="fa fa-home"></i></a>
+
+
+	  </div>
+<br><br><br>
+	  <div id="ctitle" class="ctitle">
+		<img src="img_avatar.png" alt="#" />
+		<div class="avatar-info">
+		  <a href="#sender name">sender name</a>
+		  <br />
+		  <span class="details"> user details: time ..</span>
+		</div>
+	  </div>
+	  <form>
+		<div id="chc" class="cbody">
+		  <div  class="csender">
+
+
+			<table border="none">
+			  <tr>
+				<td><i class="pip1">Hello world !!</i></td>
+
+			  </tr>
+			  <tr>
+				<td><span id="spans">sending ..</span></td>
+			  </tr>
+
+			</table>
+
+
+
+
+		  </div>
+		  <br />
+		  <br />
+		  <br />
+		  <div class="creceiver">
+
+			<table border="none">
+			  <tr>
+				<td><i class="pip2">Hi</i></td>
+
+			  </tr>
+			  
+			  <tr>
+				<td><span>sending...</span></td>
+			  </tr>
+			</table>
+
+		  </div>
+		</div>
+		<br><br><br><br>
+		<div id = "cchat" class="cchat">
+		  <input required="" autocomplete="off" autocorrect="off"  id="input2" placeholder="type your message .." name="msg">
+		  <span><button type="submit" class="fa fa-paper-plane" ></button></span>
+		</div>
+	  </form>
+	</div>		
+	<div id = "drivered">
+	  <div id="ch" class="csearch">
+		<input type="search" name="search" id="search" placeholder="Search Here .." />
+		<button id="btn" type="submit" class="fa fa-search" ></button>
+	  </div>
+
+
+	</div>
+	
+<noscript>
+  aie aie aie ! please enable javascript $!
+</noscript>
+
+<script type="text/javascript" charset="utf-8">
+var pcmob = document.getElementById ( 'pcmob' );
+var inputs = document.getElementById ( 'inputn' );
+var input2 = document.getElementById ( 'input2' );
+var fec = document.getElementById ( 'drivered' );
+var btn = document.getElementById ( 'btn' );
+var ch = document.getElementById ( 'ch' );
+var chat = document.getElementById ( 'cchat' );
+var csender = document.getElementById ( "chc" );
+var ctitle = document.getElementById ( "ctitle" );
+var visibility = "on";
+var navbar = document.getElementById ( "navbar" );
+var a1 = document.getElementById ( "a1" );
+var a2 = document.getElementById ( "a2" );
+var a3 = document.getElementById ( "a3" );
+var a4 = document.getElementById ( "a4" );
+var a5 = document.getElementById ( "a5" );
+
+function hideshow( )
+	{
+		if ( visibility == "on" )
+			{
+				visibility = "off";
+				navbar.classList.add ( "offanime" );
+				navbar.style.height = "60px";
+				a1.style.display = "none";
+				a2.style.display = "none";
+				a3.style.display = "none";
+				a4.style.display = "none";
+				a5.style.display = "none";
+				$ ( "#navbar" ).one ( 'webkitAnimationEnd oanimationend msAnimationEnd animationend',
+									 function ( e )
+										 {
+											 $ ( '#navbar' ).removeClass ( 'offanime' );
+										 } );
+
+			}
+		else
+			{
+				visibility = "on";
+				navbar.classList.add ( "onanime" );
+				navbar.style.height = "100%";
+				a1.style.display = "block";
+				a2.style.display = "block";
+				a3.style.display = "block";
+				a4.style.display = "block";
+				a5.style.display = "block";
+				$ ( "#navbar" ).one ( 'webkitAnimationEnd oanimationend msAnimationEnd animationend',
+									 function ( e )
+										 {
+											 $ ( '#navbar' ).removeClass ( 'onanime' );
+										 } );
+			}
+	}
+
+if ( $ ( window ).width ( ) > 600 )
+	{
+		pcmob.style.width = ($(window).width()-37);
+		chat.style.width = ($(window).width()-37);
+		pcmob.style.float = 'right';
+		chat.style.float = 'right';
+		fec.style.width = '30%';
+		ch.style.width = '30%';
+		fec.style.float = 'right';
+		ch.style.float = 'right';
+    }
+else
+	{
+		fec.style.display = 'none';
+		ch.style.display = 'none';
+		pcmob.style.float = "right";
+		cchat.style.float = "right";
+		pcmob.style.width = ($(window).width()-37);
+		chat.style.width = ($(window).width()-37);
+		cchat.style.height = "50px";
+		ctitle.style.height = "60px"
+	}
+$ ( function ( )
+	   {
+		   $ ( 'form' ).on ( 'submit', function ( e )
+								{
+									e.preventDefault ( );
+									$.ajax ( {
+													type: 'post',
+													url: 'post.php',
+													data: $ ( 'form' ).serialize ( ),
+													success: function ( )
+														{
+															sending ( );
+														}
+												} );
+								} );
+	   } );
+function sending( )
+	{
+        var spans = document.getElementById ( "spans" );
+        var cmsg = input2.value;
+        var nsdiv = document.createElement ( "div" );
+        var brr = document.createElement ( "br" );
+        var brr1 = document.createElement ( "br" );
+        var brr2 = document.createElement ( "br" );
+        nsdiv.classList.add ( 'csender' );
+        var nsi = document.createElement ( "i" );
+        var text = document.createTextNode ( cmsg );
+        nsi.appendChild ( text );
+        nsdiv.appendChild ( nsi );
+        nsdiv.appendChild ( brr );
+        nsdiv.appendChild ( brr1 );
+        nsdiv.appendChild ( brr2 );
+        input2.value = "";
+        csender.appendChild ( nsdiv );
+        spans.innerHTML = "sent !";
+	}
+</script>
+
+
+
 </body>
 </html>
